@@ -1,12 +1,13 @@
-#-*- coding: utf-8 -*-
+
 
 try:
    import requests
    import os.path
    import sys
+   import os
 except ImportError:
    exit("bye Bye Min ar lol")
-
+   os.system("clear")
 banner = """
     ╔═╗──────────╔══╗──────────╔╗╔╗─── 
     ║╬║╔╦╗╔═╗─╔═╗║══╣╔═╗╔═╦╗╔═╗║╚╝║╔══╗╔═╗╔═╗
