@@ -7,7 +7,7 @@ try:
    import os
 except ImportError:
    exit("bye Bye Min ar lol")
-   os.system("clear")
+  os.system("clear")
 banner = """
     ╔═╗──────────╔══╗──────────╔╗╔╗─── 
     ║╬║╔╦╗╔═╗─╔═╗║══╣╔═╗╔═╦╗╔═╗║╚╝║╔══╗╔═╗╔═╗
